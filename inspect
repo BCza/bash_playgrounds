@@ -1,0 +1,9 @@
+#! /bin/bash/sh
+
+git diff "$1"
+echo "Would you like to checkout $1 (y/n)"
+read answer
+if [ "$answer" == 'y' ]
+then
+	git checkout -- "$1"
+fi
