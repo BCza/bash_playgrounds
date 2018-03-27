@@ -1,4 +1,4 @@
-#! /bin/bash/sh
+#! /bin/bash
 
 git diff "$1"
 echo "Would you like to checkout $1 (y/n)"
