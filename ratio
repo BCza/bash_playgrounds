@@ -1,3 +1,5 @@
 #! /bin/bash
 
-bc -l <<< $1/375
+answer=$(bc -l <<< "$1/375") 
+echo $answer | pbcopy
+echo $answer
